@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>TEXT CONVERTOR</title>
+    
+    <style>
+   .box1 {
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   .box2 {
+    height: 580px;
+    border-radius: 23px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 2px 2px 50px #80808054;
+}
+.in1 {
+    margin-top: 58px;
+    padding-top: 16px;
+    width: 89%;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-bottom: 18%;
+    box-shadow: 1px 1px 6px gray;
+}
+
+.in {
+    display: flex;
+    justify-content: center;
+}
+.butgroup {
+    display: flex;
+    margin-top: 38px;
+    justify-content: center;
+    gap: 16px;
+}
+.butgroup2 {
+    display: flex;
+    gap: 12px;
+    margin-top: 17px;
+    justify-content: center;
+}
+.butgroup3 {
+    display: flex;
+    gap: 12px;
+    margin-top: 17px;
+    justify-content: center;
+}
+button.but1 {
+    padding-block: 10px;
+    font-weight: 600;
+    padding-inline: 22px;
+    border: none;
+      box-shadow: 1px 5px 15px gray;
+     border-radius: 12px;
+    color: white;
+    background-color: rgb(50, 50, 108);
+}
+.but1:hover{
+    transform: translateY(-10px);
+}
+button.but2 {
+    padding-block: 10px;
+    font-weight: 600;
+      box-shadow: 1px 5px 15px gray;
+    padding-inline: 22px;
+     border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: purple;
+}
+.but2:hover{
+    transform: translateY(-10px);
+}
+button.but3{
+    padding-block: 10px;
+      box-shadow: 1px 5px 15px gray;
+    font-weight: 600;
+    padding-inline: 22px;
+     border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: rgb(145, 29, 145);
+}
+.but3:hover{
+    transform: translateY(-10px);
+}
+button.but4 {
+    padding-block: 10px;
+    font-weight: 600;
+      box-shadow: 1px 5px 15px gray;
+     border-radius: 12px;
+    padding-inline: 22px;
+    border: none;
+    color: white;
+    background-color: rgb(12, 103, 207);
+}
+.but4:hover{
+    transform: translateY(-10px);
+}
+button.but5 {
+    padding-block: 10px;
+    font-weight: 600;
+     border-radius: 12px;
+    padding-inline: 22px;
+    border: none;
+      box-shadow: 1px 5px 15px gray;
+    color: white;
+    background-color: blue;
+}
+.but5:hover{
+    transform: translateY(-10px);
+}
+button.but6 {
+    padding-block: 10px;
+      box-shadow: 1px 5px 15px gray;
+    font-weight: 600;
+     border-radius: 12px;
+    padding-inline: 22px;
+    border: none;
+    color: white;
+    background-color: rgb(8, 88, 30);
+}
+.but6:hover{
+    transform: translateY(-10px);
+}
+button.butt1 {
+    padding-block: 10px;
+    font-weight: 600;
+     border-radius: 12px;
+    padding-inline: 22px;
+    border: none;
+      box-shadow: 1px 5px 15px gray;
+    color: white;
+    background-color: rgb(90, 90, 229);
+}
+.butt1:hover{
+    transform: translateY(-10px);
+}
+button.butt2 {
+    padding-block: 10px;
+    font-weight: 600;
+    padding-inline: 22px;
+    border: none;
+     border-radius: 12px;
+       box-shadow: 1px 5px 15px gray;
+    color: white;
+    background-color: rgba(0, 128, 83, 0.776);
+}
+.butt2:hover{
+    transform: translateY(-10px);
+}
+button.butt3{
+    padding-block: 10px;
+    font-weight: 600;
+    padding-inline: 22px;
+     border-radius: 12px;
+    border: none;
+    color: white;
+      box-shadow: 1px 5px 15px gray;
+    background-color:orangered;
+}
+.butt3:hover{
+    transform: translateY(-10px);
+}
+button.butt4 {
+    padding-block: 10px;
+    font-weight: 600;
+    padding-inline: 22px;
+    border: none;
+    color: white;
+    background-color: rgb(201, 29, 100);
+      box-shadow: 1px 5px 15px gray;
+     border-radius: 12px;
+}
+.butt4:hover{
+    transform: translateY(-10px);
+}
+button.butt5 {
+    padding-block: 10px;
+    font-weight: 600;
+    padding-inline: 22px;
+    border: none;
+    color: white;
+    background-color: rgb(234, 20, 38);
+     border-radius: 12px;
+       box-shadow: 1px 5px 15px gray;
+}
+.butt5:hover{
+    transform: translateY(-10px);
+}
+button.butt6 {
+    padding-block: 10px;
+    font-weight: 600;
+    padding-inline: 22px;
+    border: none;
+    color: white;
+    background-color: orange;
+    border-radius: 12px;
+      box-shadow: 1px 5px 15px gray;
+}
+.butt6:hover{
+    transform: translateY(-10px);
+}
+button.butta1 {
+    padding-block: 10px;
+    font-weight: 600;
+    padding-inline: 22px;
+    border: none;
+    color: white;
+    background-color: rgb(11, 145, 63);
+     border-radius: 12px;
+       box-shadow: 1px 5px 15px gray;
+}
+.butta1:hover{
+    transform: translateY(-10px);
+}
+button.butta2 {
+    padding-inline: 24px;
+    background-color: transparent;
+    /* border: 1px solid skyblue; */
+    border: none;
+         border-radius: 12px;
+       box-shadow: 1px 5px 15px gray;
+}
+.butta2:hover{
+    transform: translateY(-10px);
+}
+button.butta3 {
+    padding-inline: 24px;
+    background-color: transparent;
+    /* border: 1px solid skyblue; */
+    border: none;
+         border-radius: 12px;
+       box-shadow: 1px 5px 15px gray;
+}
+.butta3:hover{
+    transform: translateY(-10px);
+}
+button.butta4 {
+    padding-inline: 24px;
+    background-color: transparent;
+    /* border: 1px solid skyblue; */
+    border: none;
+         border-radius: 12px;
+       box-shadow: 1px 5px 15px gray;
+}
+.butta4:hover{
+    transform: translateY(-5px);
+}
+.boxlengthh {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    position: relative;
+    top: 65px;
+}
+div#length {
+    background-color: #a4a7ff30;
+    height: 35px;
+    display: flex;
+    width: 116px;
+    font-weight: 900;
+    color: #1a1ab3;
+    border-radius: 19px;
+    justify-content: center;
+    align-items: center;
+}
+div#length2 {
+    background-color: #a4a7ff30;
+    height: 35px;
+    display: flex;
+    width: 100px;
+    font-weight: 900;
+    color: #1a1ab3;
+    border-radius: 19px;
+    justify-content: center;
+    align-items: center;
+}
+div#length3 {
+    background-color: #a4a7ff30;
+    height: 35px;
+    display: flex;
+    width: 100px;
+    font-weight: 900;
+    color: #1a1ab3;
+    border-radius: 19px;
+    justify-content: center;
+    align-items: center;
+}
+div#length4 {
+    background-color: #a4a7ff30;
+    height: 35px;
+    display: flex;
+    width: 100px;
+    font-weight: 900;
+    color: #1a1ab3;
+    border-radius: 19px;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    height: 0px;
+    color: #191dd9;
+    font-weight: 600;
+    text-align: center;
+    font-size: 63px;
+    text-shadow: 1px 1px 26px #a7dbfc;
+}
+@media (max-width: 480px) {
+ .butgroup {
+    display: flex;
+    margin-top: 38px;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+button.butta3 {
+    padding-inline: 24px;
+    background-color: transparent;
+    /* border: 1px solid skyblue; */
+    border: none;
+    border-radius: 12px;
+    padding-block: 13px;
+    box-shadow: 1px 5px 15px gray;
+}
+h1 {
+    height: 0px;
+    color: #191dd9;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    font-size: 33px;
+    text-shadow: 1px 1px 26px #a7dbfc;
+}
+.butgroup2 {
+    display: flex;
+    gap: 12px;
+    margin-top: 17px;
+    flex-wrap: wrap;
+}
+.butgroup3 {
+    display: flex;
+    gap: 12px;
+    margin-top: 17px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box2 {
+    height: 100vh;
+    border-radius: 23px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 50px #80808054;
+}
+.box1 {
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    align-items: center;
+}
+.in1 {
+    margin-top: 0px;
+    padding-top: 16px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    border-radius: 21px;
+    padding-left: 25px;
+    padding-bottom: 18%;
+    box-shadow: 0px 0px 2px gray;
+}
+
+.boxlengthh {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    position: relative;
+    top: 65px;
+    flex-wrap: wrap;
+}
+button.butta4 {
+    padding-inline: 24px;
+    background-color: transparent;
+    /* border: 1px solid skyblue; */
+    border: none;
+    padding-block: 14px;
+    border-radius: 12px;
+    box-shadow: 1px 5px 15px gray;
+}
+}
+    </style>
+</head>
+<body>
+  <h1>TEXT CONVERTOR</h1>
+    <div class="box1">
+<div class="box2">
+    <div class="in">
+
+       <textarea class="in1" oninput="len()" placeholder="Type and paste your content here" id="convertor"></textarea>
+
+    </div>
+    <div class="butgroup">
+    <button class="but1" type="submit"onclick="call1()">UPPER CASE</button><button class="but2" type="submit"onclick="call2()">lowercase</button>
+    <button class="but3" type="submit" onclick="call3()">Sentence case</button><button class="but4" type="submit"onclick="call4()">Title Case</button><button class="but5" type="submit" onclick="call5()">aLtErNaTing cAsE</button><button class="but6" type="submit"onclick="call6()">InVeRsE CaSe</button>
+</div>
+ <div class="butgroup2">
+    <button class="butt1" type="submit"onclick="call7()">camelCase</button><button class="butt2" type="submit"onclick="call8()">PascalCase</button><button class="butt3" type="submit" onclick="call9()">Snake_case</button><button class="butt4"type="submit" onclick="call10()">kebab-case</button><button class="butt5" type="submit" onclick="call11()">Reverse Text</button><button class="butt6" type="submit" onclick="call12()">InVeRsE CaSe</button>
+</div>
+ <div class="butgroup3">
+<button class="butta4" type="submit" onclick="call15()"><i class="fa-solid fa-download"></i> Download</button>
+    <button class="butta1" type="submit" onclick="call12()">Remove Space</button><button class="butta2" type="submit" onclick="call13()"><i class="fa-regular fa-copy"></i> Copy</button><button class="butta3" type="submit" onclick="call14()"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+</div>
+<div class="boxlengthh">
+<div id="length">0 characters</div>
+<div id="length2">0 words</div>
+<div id="length3">0 sentences</div>
+<div id="length4">1 lines</div>
+</div>
+</div>
+    </div>
+
+    <script>
+function len() {
+    let txt = document.getElementById("convertor").value;
+
+    // Characters
+    document.getElementById("length").innerText = txt.length + " characters";
+
+    // Words
+    let words = txt.trim().split(/\s+/).filter(Boolean); // Empty space ignore
+    document.getElementById("length2").innerText = words.length + " words";
+
+    // Sentences (., !, ? se count)
+    let sentences = (txt.match(/[.!?]+/g) || []).length;
+    document.getElementById("length3").innerText = sentences + " sentences";
+
+    // Lines
+    let lines = txt.split(/\n/).length;
+    document.getElementById("length4").innerText = lines + " lines";
+}
+
+
+// Helper functions
+function getText() {
+  return document.getElementById("convertor").value;
+}
+
+function setText(val) {
+  document.getElementById("convertor").value = val;
+}
+
+// UPPER CASE
+function call1() {
+  setText(getText().toUpperCase());
+}
+
+// lowercase
+function call2() {
+  setText(getText().toLowerCase());
+}
+
+// Sentence case
+function call3() {
+  let txt = getText().toLowerCase();
+  setText(txt.charAt(0).toUpperCase() + txt.slice(1));
+}
+
+// Title Case
+function call4() {
+  let txt = getText().toLowerCase()
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+  setText(txt);
+}
+
+// aLtErNaTiNg CaSe
+function call5() {
+  let txt = getText().split("")
+    .map((ch, i) => i % 2 === 0 ? ch.toLowerCase() : ch.toUpperCase())
+    .join("");
+  setText(txt);
+}
+
+// InVeRsE CaSe
+function call6() {
+  let txt = getText().split("")
+    .map(ch => ch === ch.toUpperCase() ? ch.toLowerCase() : ch.toUpperCase())
+    .join("");
+  setText(txt);
+}
+
+// camelCase
+function call7() {
+  let txt = getText().toLowerCase()
+    .split(" ")
+    .map((word, i) => i === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1))
+    .join("");
+  setText(txt);
+}
+
+// PascalCase
+function call8() {
+  let txt = getText().toLowerCase()
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join("");
+  setText(txt);
+}
+
+// Snake_case
+function call9() {
+  setText(getText().toLowerCase().replace(/\s+/g, "_"));
+}
+
+// kebab-case
+function call10() {
+  setText(getText().toLowerCase().replace(/\s+/g, "-"));
+}
+
+// Reverse Text
+function call11() {
+  setText(getText().split("").reverse().join(""));
+}
+// Remove Space
+function call12() {
+  setText(getText().replace(/\s+/g, ""));
+}
+
+// Copy text
+function call13() {
+  navigator.clipboard.writeText(getText());
+//   alert("Copied!");
+}
+
+// Clear text
+function call14() {
+  setText("");
+}
+// Download text
+function call15() {
+  let text = getText();
+  let blob = new Blob([text], { type: "text/plain" });
+  let link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "converted_text.txt";
+  link.click();
+}
+    </script>
+
+</body>
+</html>
+
+ 
